@@ -166,6 +166,4 @@ contract Order {
         deliverymenCode[0] = Util.random(block.timestamp, block.difficulty);
         deliverymenCode[1] = Util.random(block.timestamp - 33949, block.difficulty);
     }
-
-    // ... (rest of the contract functions remain unchanged)
 }
