@@ -1,0 +1,21 @@
+version: '3'  # Updated to version 3 for better compatibility and features
+
+services:
+  database:
+    container_name:  # Updated container name
+    image:   # Use a specific PostgreSQL version
+    ports:
+      - "5432:5432"
+    volumes:
+      - /mnt/volumes/food_chain_db/postgres:/var/lib/postgresql/data  # Updated volume path
+    environment:
+      POSTGRES_DB:   # Updated database name
+      POSTGRES_USER:  # Updated username
+      POSTGRES_PASSWORD:  # Updated password
+    networks:
+      - chain_network
+
+networks:
+  chain_network:
+    external: true
+    name: # Ensure the network exists
