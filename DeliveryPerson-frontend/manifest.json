@@ -1,0 +1,26 @@
+{
+    "short_name": "Food Pack",
+    "name": "Food Packing App",
+    "icons": [
+      {
+        "src": "custom-favicon.ico",
+        "sizes": "64x64 32x32 24x24 16x16",
+        "type": "image/x-icon"
+      },
+      {
+        "src": ".png", //add imagne
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": ".png", // add image
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#00ff00", // Change the theme color to green
+    "background_color": "#f0f0f0" // Change the background color to light gray
+  }
+  
