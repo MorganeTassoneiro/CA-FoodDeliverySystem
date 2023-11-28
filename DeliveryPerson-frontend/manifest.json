@@ -20,7 +20,7 @@
     ],
     "start_url": ".",
     "display": "standalone",
-    "theme_color": "", // Change the theme color 
+    "theme_color": "", // Change the theme color.
     "background_color": "" // Change the background color
   }
   

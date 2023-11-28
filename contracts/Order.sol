@@ -9,7 +9,8 @@ library Util {
     }
     
     function getOrderStepValue(Order.OrderStep _step) external pure returns (string memory) {
-        // Loop through possible options
+        
+        // Loop for possible options
         if (Order.OrderStep.ORDERED == _step) return "ORDERED";
         else if (Order.OrderStep.PREPARATION == _step) return "PREPARATION";
         else if (Order.OrderStep.WAITING == _step) return "WAITING";
@@ -45,6 +46,8 @@ library Util {
         address[] memory deliverymen,
         uint256 now_time,
         uint256 timestamp
+
+        //all the order steps 
     ) external pure returns (Order.OrderStep) {
         if (Order.OrderStep.ORDERED == _step && _caller == client) return Order.OrderStep.CANCELEDBYRESTAURANT;
         else if (Order.OrderStep.ORDERED == _step && _caller == restaurant) return Order.OrderStep.CANCELEDBYRESTAURANT;
@@ -166,4 +169,5 @@ contract Order {
         deliverymenCode[0] = Util.random(block.timestamp, block.difficulty);
         deliverymenCode[1] = Util.random(block.timestamp - 33949, block.difficulty);
     }
+
 }
