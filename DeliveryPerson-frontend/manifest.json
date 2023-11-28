@@ -20,7 +20,7 @@
     ],
     "start_url": ".",
     "display": "standalone",
-    "theme_color": "#00ff00", // Change the theme color to green
-    "background_color": "#f0f0f0" // Change the background color to light gray
+    "theme_color": "", // Change the theme color 
+    "background_color": "" // Change the background color
   }
   
